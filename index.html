@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <span class="container">MY TASK'S</span>
+      <input type="text" id="pesq" name="pesquisar" class='container'placeholder="pessquisar tarefa">
+    </nav>
+      <main id="root" class="container">
+        <header>
+          <p class="titulo">Inserir tarefa</p>  
+          <div>
+            <input type="text" id="name" name="name" class='name'placeholder="digite o título da tarefa">
+            <select type="text" id="type" name="type" class="type" placeholder="digite o tipo da tarefa">
+              <option value="">Prazo :</option>
+              <option value="deBoa">De boa</option>
+              <option value="normal">Normal</option>
+              <option value="urgente">Urgente</option>
+              </select>
+            </div>
+           <button id="bAdd" class="headerDiv">Adicionar Tarefa na Lista</button>
+    
+        </header>
+        <section class="visuTarefas">
+          <p class="titulo tarefas">Tarefas</p>
+
+          <div>
+                  <ul>
+                    <li>
+                      <div class="card">
+                        <div><span class="ponto"></span>
+                          <span class="nn">nome tarefa</span>
+                        </div>
+                        <button class="excluir">excluir</button>
+                      </div>
+                    </li>
+                 
+                  </ul>
+          </div>
+
+        </section>
+      </main>
+
+
+
+      <script src="./script1.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
